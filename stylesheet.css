@@ -563,6 +563,36 @@ input[type="email"] {
 
 /*-------------------- Media Queries -------------------*/
 
+/* ----------- Sony XP ----------- */
+
+/* Portrait and Landscape */
+@media only screen  and (min-device-width: 1080px)  and (max-device-width: 1920px)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Portrait */
+@media only screen  and (min-device-width: 1080px)  and (max-device-width: 1920px)  and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Landscape */
+@media only screen  and (min-device-width: 1080px)  and (max-device-width: 1920px)  and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+
+/* ----------- iPad ----------- */
+
+/* Portrait and Landscape */
+@media only screen  and (min-device-width: 1536px)  and (max-device-width: 2048px)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Portrait */
+@media only screen  and (min-device-width: 1536px)  and (max-device-width: 2048px)  and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Landscape */
+@media only screen  and (min-device-width: 1536px)  and (max-device-width: 2048px)  and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+
 
 /* ----------- Asus Zenpad ----------- */
 

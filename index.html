@@ -1,1 +1,682 @@
+<!doctype html>
+<html>
+<head>
 
+<!-- Meta Info -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=7,9,10" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+<meta name="Creative Workspace" content="Creative Workspace">
+<meta name="CSULA" content="Creative, Work, Space, educational, transformative, connect, professionals, support, grow, global markets, inspire, unity, persistance">
+<meta name="C. Brown" content="Hege Refsnes">
+<meta http-equiv="refresh" content="300">
+
+<!--  Links  -->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville" rel="stylesheet">
+<title>creative workspace</title>
+
+<!-- Scripts Type -->
+<script type="text/jscript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/respond.min.js"></script>
+
+
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<header>
+  <div id="logo"><img src="logo.png" width="619" height="303" alt=""/></div>
+</header>
+<ul id="nav">
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="#news">NEWS</a></li>
+  <li><a href="#location">LOCATIONS</a></li>
+  <li><a href="#attend">ATTEND</a></li>
+  <li><a href="#faq">FAQ</a></li>
+  <li><a href="#press">PRESS</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li>
+    <button onclick="document.getElementById('id01').style.display='block'">LOGIN</button>
+    
+    <!-- The Modal -->
+    <div id="id01" class="modal"> <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span> 
+      
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked">
+          Remember me </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span> </div>
+      </form>
+    </div>
+  </li>
+</ul>
+
+<!--  back to top  -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="parallax"> <img src="feature.jpg" alt=""/> </div>
+
+<div style="background-color: #91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 45px 150px;padding: 45px;font-family: 'Lato', sans-serif;
+">
+
+	<a href="#" class="button">BECOME A MEMBER</a></div>
+
+
+<div style="height:auto;background-color:#91c73d;font-size:1.125em;color:#434244;padding: 51px 140px;">
+  <h1 id="about">ABOUT US</h1>
+  <h2>Mission</h2>
+  <p>Creative Workspace is a educational and transformative work place to connect people with professionals to help them grow in today’s demanding global markets.</p>
+  <h2>Our Values</h2>
+  <div class="left-container">
+    <h3>Inspire</h3>
+    <p>We want to people to be and think creatively. </p>
+  </div>
+  <div class="center-container">
+    <h3>Unity</h3>
+    <p>We need people to work towards the common good. </p>
+  </div>
+  <div class="right-container">
+    <h3>Persistance</h3>
+    <p>We are better together no matter what opsticales stand infront of us. </p>
+  </div>
+</div>
+<div id="what"><img src="cws_what_we_do.png" alt=""/>
+  <div style="height:auto; font-size:1.125em;color:#434244;padding: 51px 140px;">
+    <h1>What we do? </h1>
+    <div class="left-container">
+      <h3>Educate  Individuals </h3>
+      <p>Classes and Workshops <br>
+        <br>
+        Front End(Web design)<br>
+        Back End (Javascript)<br>
+        Marketing and Branding<br>
+        Career Development<br>
+        Business<br>
+        Type and Design <br></p>
+    </div>
+    <div class="center-container">
+      <h3>Career Opportunities </h3>
+      <p>Check out our Career options or Refferal Program. <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </p>
+    </div>
+    <div class="right-container">
+      <h3>Help Businesses Grow</h3>
+      <p>Need space for your company? click here. Employees need Training? Check out our Corporate program. </p>
+      <br>
+      <br>
+    </div>
+    <h3>Plans & Pricing </h3>
+    <div class="plan-container">
+      <p> Students w/ transcripts and photo ID <br>
+        <br>
+        One-day Pass: w/o membership<br>
+        Bronze: access to one facility<br>
+        Silver: access to 3 facilities<br>
+        Gold: access to 5 facilities<br>
+        Platinum: All access <br>
+        <br>
+        Military w/ valid ID <br>
+        <br>
+        Shared Desk<br>
+        Includes a shared desk with lockable cabinet. <br>
+        <br>
+        Private Office<br>
+        Includes a private desk space. <br>
+        <br>
+        Membership Annual Fee <br>
+        <br>
+        *Recive a reloadable membership card for printing. </p>
+    </div>
+    <div class="pricing-container">
+      <p> Free<br>
+        <br>
+        $20 / a day<br>
+        $25 / a month <br>
+        $50 / a month <br>
+        $75 / a month <br>
+        $100 / a month<br>
+        <br>
+        $20 / a month <br>
+        <br>
+        $350 / a month <br>
+        <br>
+        <br>
+        $400  / a month <br>
+        <br>
+        <br>
+        $53 </p>
+    </div>
+  </div>
+</div>
+<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+ 
+  <h2>Amenties</h2>
+  <p>• Kitchen/Bar [Refreshments + Healthy Snacks (Coffee/tea)] <br>
+    • Wifi + Networks <br>
+    • Computer Lab <br>
+    • Business-Class Printers <br>
+    • Spacious Common Area + Private Spaces <br>
+    • On-site Staff <br>
+    • Rentable office spaces <br>
+    • Smart Classrooms <br>
+  • CWS Shop <br></p>
+	  
+  <div style="background-color: #91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 45px 150px;padding: 45px;font-family: 'Lato', sans-serif;">
+  
+  <a href="#" class="button">NEED A SPACE?</a> 
+</div></div>
+ 
+    <!--  Calender End  -->
+    <div id="calender"> <div id="news"></div>
+    <div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li style="text-align:center"> May<br>
+      <span style="font-size:18px">2017</span></li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+	<li><span class="active">15</span></li>
+  <li><span class="active">16</span></li>
+	<li><span class="active">17</span></li>
+	<li><span class="active">18</span></li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</div>
+<!--  Calender End  -->    
+<div style="background-color: #91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 45px 150px;padding: 45px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">CALENDER</a> </div>
+<img src="cws_map.jpg" alt=""/>
+
+<div class="google-maps">
+	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yVK6KZMYW-OUz5E9emjEKhv-cHM" width="600" height="450" ></iframe>
+	</div>
+
+<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+  <h1 id="location">LOCATION</h1>
+  <h2>Upcoming Workspaces </h2>
+  <p>Los Angeles<br> Agoura Hills <br> Burbank<br>  Downtown LA<br>  Hollywood <br> Irvine <br> Long Beach<br>  Pasadena <br> Santa Monica <br> South Bay <br>
+  </p>
+</div>
+
+
+<div id="course"><img src="cws_course.jpg" alt=""/><div style="height:600px; font-size:1.125em;color:#434244; padding: 0px 120px">
+    <h1>COURSE CATALOG </h1>
+    <div class="left-container">
+      <div style="color: #fffef8;height: auto;background-color: #24408e;padding:2px 16px 32px 16px;">
+      <h3>Front End Design </h3>
+      <p>Learn about site design, color, typography and layout. The goal is to create clear content and accessible  and inform users.  </p>
+    </div>
+	  </div>
+    <div class="center-container">
+      <div style="color: #fffef8;height: auto;background-color: #24408e; padding:2px 16px 60px 16px;">
+      <h3>Career Opportunities </h3>
+      <p>Check out our Career options or Refferal Program. <br>
+       
+      </p>
+      </div> 
+	  </div>
+<div class="right-container">
+      <div style="color: #fffef8;height: auto;background-color: #24408e;padding:2px 16px 22px 16px;">
+      <h3>Help Businesses Grow</h3>
+      <p>Need space for your company? click here. Employees need Training? Check out our Corporate program. </p>
+     
+         </div> 
+	  </div>
+      <div class="row"></div>
+    <div class="left-container">
+     <div style="color: #fffef8;height: auto;background-color: #24408e; padding:2px 16px 32px 16px;">
+      <h3>Business </h3>
+      <p>This course is designed as a survey course that will expose you to business terminology, concepts, and current business issues. </p>
+    </div>
+	  </div>
+    <div class="center-container">
+          <div style="color: #fffef8;height: auto;background-color: #24408e; padding:2px 16px 64px 16px;">
+      <h3>Career Opportunities </h3>
+      <p>Check out our Career options or Refferal Program. <br>
+      
+      </p>
+    </div>
+	  </div>
+	  
+    <div class="right-container">
+      <div style="color: #fffef8;height: auto;background-color: #24408e;padding:2px 16px 16px 16px;">
+      <h3>Help Businesses Grow</h3>
+      <p>Need space for your company? click here. Employees need Training? Check out our Corporate program. </p>
+    
+    </div>
+	</div>
+	</div>
+	</div>
+	 <div class="row"></div>
+	<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+	  <h1 id="attend">ATTEND</h1>
+	  <div style="background-color: #91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">Online Course </a> </div>
+
+  <div style="background-color:#9480bb;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">Part Time<br> 
+6 weeks </a> </div>
+
+  <div style="background-color:#273996;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">Full Time<br> 12 weeks </a> </div></div>
+
+<div id="faq">
+<img src="cws_faq.jpg" alt=""/> 
+<div style="height:auto; font-size:1.125em;color:#434244;padding: 25px 125px 25px 125px;">
+  <h1>FAQ</h1>
+   <div style="height:auto; font-size:1.125em;">
+<button class="accordion">MEMBERSHIP</button>
+<div class="panel">
+  <p>Access to our digital Member Network, events and services - perfect for people who wish to connect with our global community but may only need space a one or two days a month.
+<br><br>
+This plan includes 2 monthly credits for reserving workspaces and conference rooms. Additional reservations may always be made for an additional fee.
+<br><br>
+All plans include a monthly credit allocation that can be used to reserve both conference rooms and workspaces at virtually all WeWork locations worldwide (the number offered are specific to membership type and office size). Reservations can be made online or on-the-go via our mobile app.
+</p>
+</div>
+
+<button class="accordion">TOUR</button>
+<div class="panel">
+  <p>Tours must be scheduled in advance. This ensures our availability and helps our team focus on helping you choose the best WeWork space. Give us a call at +1-888-633-2372 or email us at visit@cws.com to schedule a tour!</p>
+</div>
+
+<button class="accordion">CREDITS</button>
+<div class="panel">
+  <p>Dedicated Workspaces and Private Office membership plans include a monthly credit allocation that can be used for both color and black & white prints and copies. After you have used your allotted printing credits, you are free to keep printing and copying at additional costs – see below for more details. Credits do not rollover from month to month.</p>
+</div>
+
+<button class="accordion">BOOKINGS</button>
+<div class="panel">
+  <p>You may edit a workspace reservation up to 24 hours in advance and a conference room reservation up to one hour (60 minutes) before your meeting.</p>
+</div>
+<button class="accordion">COURSES</button>
+<div class="panel">
+  <p>Our part-time and full-time Immersive courses are designed for curious, motivated students looking to advance their career paths — or embark on new ones. People of all types of professional backgrounds and experience levels join CWS community to learn from professional leaders and speakers in coding, business, and design. We've put together a list of some common questions about our courses. Please, reach out to us for more information.</p>
+</div>
+<button class="accordion">PAYMENTS</button>
+<div class="panel">
+  <p>We accept check, credit/debit card, and PayPal. We understand these courses are a significant financial investment, so we provide several options to ease tuition payment. After submitting a down payment to save your spot in the course, you can choose the installment plan that’s best for you. Additionally, we work with financing partners to offer low-cost loan options for eligible students.</p>
+</div>
+<button class="accordion">CANCELATIONS</button>
+<div class="panel">
+  <p>For this reason, our refund policy varies based on your location <br><br>
+  We do not offer refunds for cancellations made within seven days of the event date.</p>
+</div>
+<button class="accordion">DISCLAIMER</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--  sign up  -->
+<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+	<h1><center>Sign up for News and Updates.</center></h1>
+  <input type="email" value="" placeholder="name@email.com" required />
+  <input type="submit" value="Submit" />
+	</div>
+	
+<!--  media kit  -->
+<img src="media.jpg" alt=""/>
+
+<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+	
+
+ <h1 id="press">REQUEST A MEDIA KIT</h1>
+	<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="First Name">FIRST NAME</label>  
+  <div class="col-md-5">
+  <input id="First Name" name="First Name" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Last Name">LAST NAME</label>  
+  <div class="col-md-5">
+  <input id="Last Name" name="Last Name" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Email">EMAIL</label>  
+  <div class="col-md-5">
+  <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Phone Number">PHONE NUMBER</label>  
+  <div class="col-md-5">
+  <input id="Phone Number" name="Phone Number" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Organization ">ORGANIZATION </label>  
+  <div class="col-md-5">
+  <input id="Organization " name="Organization " type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Country">COUNTRY</label>
+  <div class="col-md-5">
+    <select id="Country" name="Country" class="form-control">
+      <option value="">Choose a Country...</option>
+      <option value="">American Samoa (US)</option>
+      <option value="">Anguilla (GB)</option>
+      <option value="">Aruba (NL)</option>
+      <option value="">Bermuda (GB)</option>
+      <option value="">Bouvet Island (NO)</option>
+      <option value="">British Indian Ocean Territory (GB)</option>
+      <option value="">British Virgin Islands (GB)</option>
+      <option value="">Cayman Islands (GB)</option>
+      <option value="">Christmas Island (AU)</option>
+      <option value="">Cocos Islands (AU)</option>
+      <option value="">Cook Islands (NZ)</option>
+      <option value="">Coral Sea Islands Territory (AU)</option>
+      <option value="">Falkland Islands (GB)</option>
+      <option value="">Faroe Islands (DK)</option>
+      <option value="">French Guiana (FR)</option>
+      <option value="">French Polynesia (FR)</option>
+      <option value="">French Southern Lands (FR)</option>
+      <option value="">Gibraltar (GB)</option>
+      <option value="">Greenland (DK)</option>
+      <option value="">Guadeloupe (FR)</option>
+      <option value="">Guam (US)</option>
+      <option value="">Guernsey (GB)</option>
+      <option value="">Heard and McDonald Islands (AU)</option>
+      <option value="">Hong Kong (CN)</option>
+      <option value="">Isle of Man (GB)</option>
+      <option value="">Jan Mayen (NO)</option>
+      <option value="">Jersey (GB)</option>
+      <option value="">Macau (CN)</option>
+      <option value="">Martinique (FR)</option>
+      <option value="">Mayotte (FR)</option>
+      <option value="">Montserrat (GB)</option>
+      <option value="">Navassa (US)</option>
+      <option value="">Netherlands Antilles (NL)</option>
+      <option value="">New Caledonia (FR)</option>
+      <option value="">Niue (NZ)</option>
+      <option value="">Norfolk Island (AU)</option>
+      <option value="">Northern Mariana Islands (US)</option>
+      <option value="">Pitcairn Island (GB)</option>
+      <option value="">Puerto Rico (US)</option>
+      <option value="">Reunion (FR)</option>
+      <option value="">Saint Helena (GB)</option>
+      <option value="">Saint-Pierre and Miquelon (FR)</option>
+      <option value="">South Georgia (GB)</option>
+      <option value="">Svalbard (NO)</option>
+      <option value="">Tokelau (NZ)</option>
+      <option value="">Turks and Caicos Islands (GB)</option>
+      <option value="">U.S. Minor Pacific Islands (US)</option>
+      <option value="">U.S. Virgin Islands (US)</option>
+      <option value="">Wallis and Futuna (FR)</option>
+      <option value="">Antarctica</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for=""></label>
+  <div class="col-md-4">
+    <button id="submit" name="" class="btn btn-success">SUBMIT</button>
+  </div>
+</div>
+</div>
+
+<div id="career">
+<img src="career.jpg" alt=""/>
+<div style="color:#fffef8;padding: 300px 140px;">
+	<h1>START YOUR <br>CAREER ON THE <br>RIGHT FOOT.</h1>
+	</div>
+</div>
+		
+<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">	
+<div style="background-color: #91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">STAFF </a> </div>
+
+  <div style="background-color:#91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">VOLUNTEER</a> </div>
+
+  <div style="background-color:#91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">INSTRUCT</a> </div>
+ 
+	 <div style="background-color:#91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">REFERAL PROGRAM</a> </div>
+	
+		 <div style="background-color:#91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;
+"><a href="#" class="button">TRAINING</a> </div></div>
+
+<div style="height:auto;font-size:1.125em;color:#434244;padding: 25px 125px 25px 125px;">
+  
+ <h1 id="contact">CONTACT US </h1>
+	<form>
+	<div class="element-input" title="First Name"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input" required="required" placeholder="First Name"/><span class="icon-place"></span></div></div>
+	<div class="element-input" title="Last Name"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input1" required="required" placeholder="Last Name"/><span class="icon-place"></span></div></div>
+	<div class="element-email" title="Email"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="email" name="email" value="" required="required" placeholder="Email"/><span class="icon-place"></span></div></div>
+	<div class="element-phone" title="Phone Number"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone" required="required" placeholder="Phone Number" value=""/><span class="icon-place"></span></div></div>
+	<div class="element-input" title="Company "><label class="title"></label><div class="item-cont"><input class="large" type="text" name="input2" placeholder="Company "/><span class="icon-place"></span></div></div>
+	<div class="element-date"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" data-format="yyyy-mm-dd" type="date" name="date" required="required" placeholder="Avaialibility"/><span class="icon-place"></span></div></div>
+	<div class="element-textarea"><label class="title"><span class="required">*</span></label><div class="item-cont"><textarea class="large" name="textarea" cols="100" rows="5" required placeholder="Details"></textarea><span class="icon-place"></span></div></div>
+<div class="submit"><input type="submit" value="SUMBIT"/></div></form><script type="text/javascript" src="formoid_files/formoid1/formoid-solid-green.js"></script>
+  
+</div>
+	
+	<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+		<img src="ME.jpg" alt=""/> 
+	  <h1>Founder <br>
+		  Calah A. M. Brown</h1>
+	  Personal: cbrown51@calstatela.edu<br>
+	  Business: abcmbusiness@gmail.com </div>
+		
+		<img src="storefront.jpg" alt=""/>
+		<div id="shop">
+<div style="height:auto;background-color:#a7a9ab;font-size:1.125em;color:#434244;padding: 51px 140px;">
+  <h1>CONTACT US </h1>		
+<div class="row">
+<img src="bag.jpg" alt=""/>
+	<br>Tote<br>$20</div>
+	
+	<div class="row">
+<img src="dark shirt.jpg" alt=""/> 
+		<br>Graphic T <br>$25</div>
+		
+<div class="row">
+<img src="sweater.jpg" alt=""/>
+<br>Sweater<br>$30</div>
+
+<div class="row">
+<img src="cup.jpg" alt=""/> 
+<br>Mug<br>$15
+</div>
+
+<div style="background-color:#91c73d;border: none;color:#fffef8;text-align: center;text-decoration: none;font-size: 1.876em;cursor: pointer;display: block;margin: 24px 150px;padding: 24px;font-family: 'Lato', sans-serif;">
+<a href="#" class="button">SHOP</a> 
+</div></div></div>
+	
+<div class="footer">
+		<div class="left">
+<div style="background-color:#434244;font-size:1.375em;padding: 51px 140px 154px;font-family:'Lato' sans-serif;">
+	LOCATIONS <br>
+ABOUT US <br>
+ATTEND  <br>
+SHOP <br>
+<br>
+PRESS<br>
+CAREER <br>
+COORPORATE<br>
+PARTNERSHIP
+	</div>
+		</div>
+	</div>
+			<div class="right">
+			<div style="color:#fffef8;background-color:#434244;font-size:1.325em;padding: 25px 0 25px 300px;">
+				<p>Creative Workspace is a educational and transformative <br>workplace to connect people  with professionals to help<br> them grow in today’s demanding global markets.</p>
+			
+				Sign up for our Newsletter
+				 <input type="email" value="" placeholder="name@email.com" required />
+  <input type="submit" value="Submit" />
+  <br>
+  Creative Workspace HQ, Los Angeles, CA |<br> 1.800.633.2372|<br>
+Privacy		Terms<br><br>
+				<a href="https://facebook.com"><img src="Facebook_gray.png" alt=""/></a> 
+				<a href="https://www.twitter.com"><img src="Twitter_gray.png" alt=""/> </a>
+				<a href="https://www.instagram.com"><img src="Instagram_gray.png" alt=""/> </a>
+				<a href="https://www.linkedin.com"><img src="LinkedIn_gray.png" alt=""/> </a>
+				<a href="https://www.youtube.com"><img src="YouTube_gray.png" alt=""/></a> </div>
+		
+	</div>
+	
+	
+</body>
+
+<!--  Scirpts  -->
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+<script>
+	$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        </script>
+        
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+        
+<script>
+	// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+	</script>
+
+<script src="fittext.js"></script>
+	<script type="text/javascript">
+	  fitText(document.getElementById('fittext'), 1)
+	</script>
+	
+<!--  End Scirpts  -->
+
+</html>

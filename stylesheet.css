@@ -1,1 +1,633 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #fffef8;
+	margin: 0;
+	max-width: 100%;
+
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	
+}
+
+p, h2, h3 {
+	font-family: 'Libre+Baskerville', serif;
+
+}
+
+img, iframe {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+header {
+	background: #92c83e;
+	height: auto;
+}
+#logo img {
+	display: block;
+	margin: auto;
+	padding: 50px 0;
+}
+/* -------------- navbar ---------- */
+#nav {
+	list-style: none;
+	background: #92c83e;
+	margin: 0;
+	padding: 24px 0 24px 0;
+	text-align: center;
+	font-size: 1.125em;
+	font-family: 'Lato', sans-serif;
+}
+#nav li {
+	position: relative;
+	display: inline;
+	width: 9em;
+}
+#nav a {
+	display: inline-block;
+	padding: 0;
+	width: 6em;
+	line-height: 1.6;
+	color: #434345;
+	background-color: #92c83e;
+	text-decoration: none;
+}
+#nav ul {
+	position: absolute;
+	/*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+	left: -9999px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#nav ul li {
+	display: block;
+}
+#nav li:hover ul {
+	left: 0;
+}
+#nav li:hover a {
+	text-decoration: none;
+	background: #434345;
+	color: #92c83e;
+}
+#nav li:hover ul a {
+	text-decoration: none;
+	background-color: #000;
+}
+#nav li:hover ul a:hover {
+	text-decoration: none;
+	background: #000;
+}
+#nav ul a {
+	white-space: nowrap;
+	display: block;
+	background-color: #fff;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+#nav a:hover {
+	text-decoration: none;
+	background: #f1f1f1;
+}
+/*-------------- Navbar Popup ----------------*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+	cursor: pointer;
+	padding: 5px 9px;
+	font-size: 1em;
+	border: none;
+	background-color: #91c73d;
+	font-family: 'Lato' san-serif;
+	color: #434244;
+	font-weight: bold;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.container {
+	padding: 16px;
+}
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fffef9;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #fffef9;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+.close:hover, .close:focus {
+	color: red;
+	cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+ @-webkit-keyframes animatezoom {
+ from {
+-webkit-transform: scale(0)
+}
+ to {
+-webkit-transform: scale(1)
+}
+}
+ @keyframes animatezoom {
+ from {
+transform: scale(0)
+}
+ to {
+transform: scale(1)
+}
+}
+/*--------------End Navbar----------------*/
+  
+/*--------------Parallax----------------*/
+
+.parallax {
+	width: 100%;
+	height: auto;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.right-container {
+	float: right;
+	width: 28%;
+	display: inline-block;
+}
+.center-container {
+	width: 28%;
+	margin: 0 50px;
+	display: inline-block;
+}
+.left-container {
+	float: left;
+	width: 28%;
+	display: inline-block;
+}
+.button {
+	color: #fffef8;
+}
+
+/*--------------Button Popups ----------------*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*--------------End Button Popups ----------------*/
+
+#what img {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -2
+}
+#what.right-container {
+	float: right;
+	width: 28%;
+	margin: 0 25px;
+	display: inline-block;
+}
+#what.center-container {
+	width: 25%;
+	margin: 0 25px;
+	display: inline-block;
+}
+#what.left-container {
+	float: left;
+	width: 28%;
+	display: inline-block;
+}
+.plan-container {
+	float: left;
+	width: 70%;
+	display: inline-block;
+}
+.pricing-container p {
+	width: 30%;
+	display: inline-block;
+}
+/*--- Calender---*/
+* {
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+}
+body {
+	font-family: Verdana, sans-serif;
+}
+.month {
+	padding: 70px 25px;
+	width: 100%;
+	background: #91c73d;
+}
+.month ul {
+	margin: 0;
+	padding: 0;
+}
+.month ul li {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.month .prev {
+	float: left;
+	padding-top: 10px;
+}
+.month .next {
+	float: right;
+	padding-top: 10px;
+}
+.weekdays {
+	margin: 0;
+	padding: 10px 0;
+	background-color: #ddd;
+}
+.weekdays li {
+	display: inline-block;
+	width: 13.6%;
+	color: #666;
+	text-align: center;
+}
+.days {
+	padding: 10px 0;
+	background: #eee;
+	margin: 0;
+}
+.days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 13.6%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #777;
+}
+.days li .active {
+	padding: 5px;
+	background: #91c73d;
+	color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:1024px) {
+.weekdays li, .days li {
+	width: 13.1%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.weekdays li, .days li {
+	width: 12.5%;
+}
+.days li .active {
+	padding: 2px;
+}
+}
+
+@media screen and (max-width: 290px) {
+.weekdays li, .days li {
+	width: 12.2%;
+}
+}
+/*--------------Google Map ----------------*/
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; 
+	height: 0;
+	overflow: hidden;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+#course img {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -2
+}
+#course.right-container {
+	float: right;
+	width: 28%;
+	margin: 0 10px;
+	display: inline-block;
+}
+#course.center-container {
+	width: 25%;
+	margin: 0 10px;
+	display: inline-block;
+}
+#course.left-container {
+	float: left;
+	width: 28%;
+	display: inline-block;
+}
+#row {
+	width: 100%;
+	height: auto;
+}
+#faq img {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -2
+}
+button.accordion {
+	color: #fffef8;
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+	background-color: #ddd;
+}
+div.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+/*--------------sign up----------------*/
+
+input[type="email"] {
+	padding: 24px;
+	width: 75%;
+	border: 1px #434244;
+}
+input[type="email"]:focus {
+	border: 1px #434244;
+}
+input[type="submit"] {
+	border: #91c73d;
+	background: #91c73d;
+	color: #fffef8;
+	padding: 24px 48px;
+	font-size: 16px;
+}
+form {
+	width: 100%;
+	margin: 0 auto;
+}
+#submit {
+	width: 50%;
+	padding: 24px;
+	font-size: 16px;
+	margin-top: 24px;
+	color: #fffef8;
+}
+#career img {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -2
+}
+#career h1 {
+	text-align: center;
+	font-size: 5em;
+}
+#shop img {
+	width: 150px;
+}
+#row_one {
+	width: 25%;
+}
+.row {
+	width: 24%;
+	display: inline-block;
+}
+.footer {
+	float: left;
+	font-family: 'lato' sans-serif;
+	background-color: #434244;
+	color: #fffef8;
+}
+input[type="email"] {
+	padding: 24px;
+	width: 75%;
+	border: 1px #434244;
+}
+.right input[type="email"]:focus {
+	border: 1px #434244;
+}
+.right input[type="submit"] {
+	border: #91c73d;
+	background: #91c73d;
+	color: #fffef8;
+}
+.right img {
+	padding-right: 20px;
+}
+/*--------------End Parallax----------------*/
+
+/*-------------- Back to Top ----------------*/
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 30px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #92c83e; /* Set a background color */
+	color: #fffef8; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+}
+#myBtn:hover {
+	background-color: #434244; /* Add a dark-grey background on hover */
+}
+
+/*-------------- End Back to Top ----------------*/
+
+
+
+/*-------------------- Media Queries -------------------*/
+
+
+/* ----------- Asus Zenpad ----------- */
+
+/* Portrait and Landscape */
+@media only screen  and (min-device-width: 600px)  and (max-device-width: 1024px)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Portrait */
+@media only screen  and (min-device-width: 600px)  and (max-device-width: 1024px)  and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Landscape */
+@media only screen  and (min-device-width: 600px)  and (max-device-width: 1024px)  and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Galaxy Tab 10.1 ----------- */
+
+/* Portrait and Landscape */
+@media  (min-device-width: 800px)  and (max-device-width: 1280px) {
+}
+
+/* Portrait */
+@media  (max-device-width: 800px)  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media  (max-device-width: 1280px)  and (orientation: landscape) {
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen  and (min-device-width: 1200px)  and (max-device-width: 1600px)  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen  and (min-device-width: 1200px)  and (max-device-width: 1600px)  and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {
+}
+
+/* 13 inch displays ----------- */
+@media only screen and (min-width : 1224px) {
+}
+
+/* 24 inch iMac ----------- */
+@media only screen and (min-width : 1600px) {
+}
+
+/* 27 inch iMac ----------- */
+@media only screen and (min-width : 2400px) {
+}
+
+/* ----------- Popup ----------- */
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+	display: block;
+	float: none;
+}
+.cancelbtn {
+	width: 100%;
+}
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+.parallax {
+	background-attachment: scroll;
+}
+}
 
